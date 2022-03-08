@@ -1,6 +1,5 @@
 # Foreground-speech
 
-=====
 
 This is the Github page for paper 'Automated foreground speech detection in everyday home environments: A transfer learning approach'
 
@@ -10,17 +9,23 @@ Sample code to unify the labels and perform clustering: demo.ipynb
 
 =====
 
-There are two types of features - FFT and embeddings. The FFT features of Participant Group x are under ./FFT/Px.zip. The embeddings of Participant Group x are under ./embedding/Px
+# Overview
+
+There are two types of features - FFT and embeddings. The FFT features of Participant Group x are under ./fft/P<x>.zip, where <x> is the group index. Similarly, the embeddings of Participant Group x are under ./embeddings/Px.zip.
 
 =====
 
-Label mechanism:
+# Annotation:
 
 For groups 1-15:
 
-1 - wearer speech; 2 - non-wearer speech; m - mixed speech; t - Television/laptop; p - Telephone voice; c - Baby sounds; b - non-vocal background; x - ambiguous sounds.
+1 - wearer speech; 2 - background speech from non-wearer participants; m - mixed (wearer & non-wearer) speech; t - television/laptop; p - telephone voice; c - baby sounds/crying; b - non-vocal background; x - ambiguous sounds.
 
-For FFT features, the naming format is seg<x>_label_<y>.csv. For embedding features, the features and labels are put together in individual csv files, where [:,:-1] are the features and [:, -1] are the labels. The embeddings are not sorted by label type rather than segment index.
+For groups 16-18:
+
+1 - foreground speech (wearer speech + mixed speech); 2 - background sound (sound other than foreground speech types); x - ambiguous sounds.
+
+Files of the FFT features are named as seg<segment id>_label_<y>.csv. For embedding features, the features and labels are put together in individual csv files, where [:,:-1] are the features and [:, -1] are the labels. The embeddings are not sorted by label type rather than segment index.
   
  For groups 16-18:
   
