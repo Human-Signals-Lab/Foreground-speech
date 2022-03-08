@@ -1,7 +1,7 @@
 # Foreground-speech
 
 
-This is the Github page for paper 'Automated foreground speech detection in everyday home environments: A transfer learning approach'
+This is the Github page for paper '**Automated foreground speech detection in everyday home environments: A transfer learning approach**'
 
 The dataset: https://dataverse.tdl.org/dataset.xhtml?persistentId=doi:10.18738/T8/YTHWD4&version=DRAFT
 
@@ -39,7 +39,7 @@ We release two types of embeddings, as described in the paper. Each embedding fi
 
 The data shape is (T, 513) for emb1 and (T, 1001) for emb2 in each csv file, where T is the total number of embedding vectors for the session (i.e., the temporal size in second). The features can be accessed at [:, :-1], and the labels can be accessed at [:, -1]. The embeddings are NOT sorted by temporal order.
   
-You can use the sample *load_multiple_features* and *pre-processing* functions in our released code **demo.ipynb** to access the features and labels, and/or to filter specific sound types.
+You can use the sample *load_multiple_features* and *pre-processing* functions in our released code *demo.ipynb* to access the features and labels, and/or to filter specific sound types.
 
 
 
