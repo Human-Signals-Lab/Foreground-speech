@@ -17,13 +17,7 @@ There are two types of features - FFT and embeddings. The FFT features of Partic
 
 ## Annotation
 
-For groups 1-15:
-
 1 - wearer speech; 2 - background speech from non-wearer participants; m - mixed (wearer & non-wearer) speech; t - television/laptop; p - telephone voice; c - baby sounds/crying; b - non-vocal background; x - ambiguous sounds.
-
-For groups 16-18:
-
-1 - foreground speech (wearer speech + mixed speech); 2 - background sound (sound other than foreground speech types); x - ambiguous sounds.
 
 For more details of the annotation, please refer to our paper.
 
